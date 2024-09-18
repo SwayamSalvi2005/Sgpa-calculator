@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+:root {
+    --primary: #393e3e;
+    --secondary: #145c72;
+    --secondary-light: #00a0d1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    font-size: 1.6rem;
+    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Changed to flex-start */
+    align-items: center;
+    padding-top: 4rem; /* Increased padding for better visibility */
+    min-height: 100vh; /* Ensure it takes full height */
+}
+
+.content {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.content h1 {
+    font-size: 3.6rem;
+    font-weight: 600;
+    color: var(--primary);
+}
+
+.content p {
+    font-size: 1.6rem;
+    color: var(--primary);
+}
+
+.box {
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    width: 100%;
+    height: 140rem;
+}
+
+.calculate-form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    color: var(--secondary);
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+input {
+    height: 4rem;
+    padding: 0 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--secondary);
+    color: var(--primary);
+    font-size: 1.6rem;
+    transition: border 0.3s;
+    margin-top: 0.5rem; /* Added margin to inputs for spacing */
+}
+
+input:focus {
+    border-color: var(--secondary-light);
+    outline: none;
+}
+
+.primary-btn {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: var(--secondary);
+    color: white;
+    font-size: 1.8rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.primary-btn:hover {
+    background-color: var(--secondary-light);
+}
+
+.result {
+    color: var(--secondary);
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 2rem;
+}
+
+@media (max-width: 600px) {
+    .content h1 {
+        font-size: 2.4rem;
+    }
+
+    .primary-btn {
+        font-size: 1.6rem;
+        width: 100%;
+    }
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Semester 2</title>
+    <link rel="stylesheet" href="sem2.css" />
+</head>
+<body>
+    <div class="background">
+        <div class="container">
+            <div class="content">
+                <h1>SGPA Calculator</h1>
+                <p>Calculate your Semester Grade Point Average</p>
+            </div>
+            <div class="box">
+                <form onsubmit="calculateMarks(event)" class="calculate-form" id="calculateForm">
+                    <div class="form-group">
+                        <label for="m2-sem">Maths 2</label>
+                        <input type="number" required min="0" max="100" name="m2-sem" id="m2-sem" placeholder="please enter sem  + ut marks" />
+                    </div>
+                    <div class="form-group">
+                        <label for="m2-inter">Maths 2 - internal </label>
+                        <input type="number" required min="0" max="100" name="m2-inter" id="m2-inter" placeholder=" please enter internal Marks" />
+                    </div>
+                    <div class="form-group">
+                        <label for="p2-sem">Physics 2</label>
+                        <input type="number" required min="0" max="100" name="p2-sem" id="p2-sem" placeholder="please enter sem  + ut marks" />
+                    </div>
+                    <div class="form-group">
+                        <label for="p2-inter">Physics 2 - Internal</label>
+                        <input type="number" required min="0" max="100" name="p2-inter" id="p2-inter" placeholder="please enter internal Marks" />
+                    </div>
+                    <div class="form-group">
+                        <label for="c2-sem">Chemistry 2</label>
+                        <input type="number" required min="0" max="100" name="c2-sem" id="c2-sem" placeholder="please enter sem  + ut marks" />
+                    </div>
+                    <div class="form-group">
+                        <label for="c2-inter">Chemistry 2 - Internal</label>
+                        <input type="number" required min="0" max="100" name="c2-inter" id="c2-inter" placeholder="please enter internal Marks" />
+                    </div>
+                    <div class="form-group">
+                        <label for="grap-sem">Graphics</label>
+                        <input type="number" required min="0" max="100" name="grap-sem" id="grap-sem" placeholder="please enter sem  + ut marks" />
+                    </div>
+                    <div class="form-group">
+                        <label for="grap-inter">Graphics - Internal</label>
+                        <input type="number" required min="0" max="100" name="grap-inter" id="grap-inter" placeholder="please enter internal Marks" />
+                    </div>
+                    <div class="form-group">
+                        <label for="cp-sem">C prog </label>
+                        <input type="number" required min="0" max="100" name="cp-sem" id="cp-sem" placeholder="please enter sem  + ut marks" />
+                    </div>
+                    <div class="form-group">
+                        <label for="cp-inter">C prog - Internal</label>
+                        <input type="number" required min="0" max="100" name="cp-inter" id="cp-inter" placeholder="please enter internal Marks" />
+                    </div>
+                    <div class="form-group">
+                      <label for="pce-sem">PCE ethics </label>
+                      <input type="number" required min="0" max="100" name="pce-sem" id="pce-sem" placeholder="please enter internal Marks" />
+                    </div>
+                    <div class="form-group">
+                      <label for="pce-inter">PCE ethics - Internal</label>
+                      <input type="number" required min="0" max="100" name="pce-inter" id="pce-inter" placeholder="please enter internal Marks" />
+                    </div>
+                    <div class="form-group">
+                        <label for="workshop">Workshop</label>
+                        <input type="number" required min="0" max="100" name="workshop" id="workshop" placeholder="please enter internal Marks" />
+                    </div>
+                    <button type="submit" class="primary-btn">Calculate</button>
+                </form>
+                <p id="result" class="result"></p>
+            </div>
+        </div>
+    </div>
+    <script src="sem2.js"></script>
+</body>
+</html>
